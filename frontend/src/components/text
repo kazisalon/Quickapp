@@ -1,0 +1,20 @@
+1. **Setup (Lines 1-4)**:
+   - We get our tools ready (Express and CORS)
+   - Create a new server app
+   - Choose port 3000 (like choosing a door number for our server)
+2. **Middleware (Lines 6-7)**:
+   - CORS: Allows our frontend to talk to our backend
+   - express.json(): Lets us read JSON data that the frontend sends
+3. **Data Storage (Lines 9-12)**:
+   - We create a simple list (array) to store our todos
+   - In a real app, this would be a database
+4. **Routes (Different URLs our app responds to)**:
+   - GET `/api/todos`: Sends the list of all todos
+   - POST `/api/todos`: Creates a new todo
+   - DELETE `/api/todos/:id`: Deletes a specific todo
+   - PATCH `/api/todos/:id`: Updates a todo's completion status
+5. **Error Handling**:
+   - Each route has try-catch blocks to handle errors nicely
+   - We send back appropriate error messages if something goes wrong
+
+To use this:
